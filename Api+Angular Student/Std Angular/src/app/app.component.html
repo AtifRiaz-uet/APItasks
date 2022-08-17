@@ -1,0 +1,14 @@
+<div style="background-color:beige">
+
+
+  <h1>
+    Student List
+  </h1>
+<div style="background-color:aliceblue">
+  <app-employee-list (clickedEmp)="ShowEmp($event)" ></app-employee-list>
+
+  </div>
+  <app-employee-details [empDetails] = 'this.selected_emp'></app-employee-details>
+  <app-buttons  [empDetails] = 'this.selected_emp'  ></app-buttons>
+  </div>
+  <!--  -->
